@@ -20,15 +20,14 @@
   }
   
   header .main {
-    width: 90%; 
-    max-width: 800px; 
+    min-width: 500px;
+    flex-wrap: wrap;
     display: flex;
     gap: 40px; 
+    justify-content: center
+    ;
   }
-  
-  header .main .left {
-    flex: 1;
-  }
+
   
   header .main .left p {
     font-size: 24px; 
@@ -42,21 +41,16 @@
     height: 90px; 
     width: auto; 
   }
-  
-  header .main .right {
-    flex: 1;
-  }
-  
+
   header .main .right form {
     background: #fff;
     width: 100%; 
-    max-width: 400px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 40px; 
+    padding: 16px; 
     border-radius: 8px;
   }
   
-  .form_body {
+  form {
     padding: 0 12px;
     display: flex;
     flex-direction: column;
@@ -98,7 +92,8 @@
     color: #1877f2;
     cursor: pointer;
     font-size: 14px; 
-  }
+    margin: 10px 0; 
+}
   
   .forget:hover {
     text-decoration: underline;
@@ -121,3 +116,6 @@
     cursor: pointer;
     margin: auto;
   }
+
+
+
